@@ -14,64 +14,42 @@
   }
 
   gulp.task('default', ['clean'], function() {
-      gulp.start('styles','swig','icons','jshint', 'scripts', 'fonts', 'styleguide', 'favicon', 'images', 'browser-sync');
+      gulp.start('styles','icons','jshint', 'scripts', 'fonts', 'images', 'browser-sync');
   });
 
   gulp.task('clean', function(cb) {
-      return del(['dist/'], cb)
+      return del(['assets/dist'], cb)
   });
 
   gulp.task('styles', function() {
-    return sass('app/assets/scss/styles.scss', {
+    return sass('app/scss/styles.scss', {
       style: 'expanded',
       loadPath:[
-        config.bowerDir + '/fontawesome/scss',
-
-
-        config.npmDir + '/bootstrap-sass/assets/stylesheets',
+        config.bowerDir + '/fontawesome/scss'
       ]
       })
       .pipe(autoprefixer())
-      .pipe(gulp.dest('dist/assets/css'))
+      .pipe(gulp.dest('assets/dist/css'))
       .pipe(browserSync.stream());
   });
 
 
-gulp.task('swig', function() {
-  return gulp.src('app/templates/pages/**/*.html')
-    .pipe(swig({
-        defaults: {
-          cache: false
-        }
-      }
-    ))
-    .pipe(gulp.dest('dist/'))
-    .pipe(browserSync.stream());
-});
-
 gulp.task('jshint', function() {
     return gulp.src([
-        'app/assets/js/*.js',
+        'app/js/*.js',
     ]).pipe(jshint()
     ).pipe(jshint.reporter('jshint-stylish'));
 });
 
 gulp.task('scripts', function() { 
     return gulp.src([
-        config.npmDir + '/jquery/dist/jquery.min.js',
-        config.npmDir + '/bootstrap-sass/assets/javascripts/bootstrap.min.js',
-        'app/assets/js/vendor/*.js',
-        'app/assets/js/*.js'
+        'app/js/vendor/*.js',
+        'app/js/*.js'
     ])
         .pipe(concat('scripts.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('dist/assets/js'))
+        .pipe(gulp.dest('assets/dist/js'))
         .pipe(browserSync.stream());
-});
-
-gulp.task('favicon', function() { 
-    return gulp.src('app/favicon.ico') 
-        .pipe(gulp.dest('dist')); 
 });
 
 gulp.task('images', function() {
@@ -81,32 +59,24 @@ gulp.task('images', function() {
 });
 
 gulp.task('fonts', function() {
-    return gulp.src('app/assets/fonts/**/*')
-        .pipe(gulp.dest('dist/assets/fonts'));
-});
-
-gulp.task('styleguide', function() { 
-    return gulp.src('app/styleguide/styleguide.html') 
-        .pipe(gulp.dest('dist')); 
+    return gulp.src('app/fonts/**/*')
+        .pipe(gulp.dest('assets/dist/fonts'));
 });
 
 
   gulp.task('icons', function() { 
     return gulp.src(config.bowerDir + '/fontawesome/fonts/**.*') 
-        .pipe(gulp.dest('dist/assets/fonts'))
+        .pipe(gulp.dest('assets/dist/fonts'))
         .pipe(browserSync.stream()); 
 });
 
-  gulp.task('browser-sync', ['styles' , 'swig'], function() {
+  gulp.task('browser-sync', ['styles'], function() {
     // Static server
     browserSync.init({
-        server: {
-            baseDir: "./dist"
-        }
+         proxy: "http://gamedigest.dev:9000/"
     });
 
-    gulp.watch('app/templates/**/*.html', ['swig']);
-    gulp.watch('app/assets/scss/**/*.scss', ['styles']);
-    gulp.watch('app/assets/js/**/*.js', ['jshint', 'scripts']);
-    gulp.watch('app/assets/img/**/*', ['images']);
+    gulp.watch('app/scss/**/*.scss', ['styles']);
+    gulp.watch('app/js/**/*.js', ['jshint', 'scripts']);
+    gulp.watch('app/img/**/*', ['images']);
   });
