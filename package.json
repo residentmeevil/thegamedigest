@@ -1,0 +1,30 @@
+{
+  "name": "thegamedigest",
+  "version": "0.0.0",
+  "description": "The Game Digest is a weekly collection of the best Video Game related content",
+  "license": "",
+  "repository":{
+      "type" : "git",
+      "url"  : ""
+    },
+  "dependencies": {
+  	"gulp": "*",
+  	"gulp-autoprefixer": "*",
+    "gulp-jshint": "*",
+    "jshint-stylish": "*",
+    "gulp-ruby-sass": "*",
+    "gulp-util": "*",
+    "gulp-uglify": "*",
+    "gulp-concat": "*",
+    "browser-sync": "*",
+    "jquery": "*"
+    ,"gulp-swig": "*"
+    ,"bootstrap-sass": "*"
+  },
+  "devDependencies": {
+    "del": "*"
+  },
+  "jshintConfig": {
+    "node": true
+  }
+}
