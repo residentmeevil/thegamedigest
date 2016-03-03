@@ -1,0 +1,17 @@
+Issue-number: 1
+
+----
+
+Issue-date: Friday 4th March 2016
+
+----
+
+Editor-title: New
+
+----
+
+Editor-text: Lorem ipsum
+
+----
+
+Title: Issue 1

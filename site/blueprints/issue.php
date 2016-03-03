@@ -4,9 +4,15 @@ title: Issue
 pages: true
 files: true
 fields:
-  title:
-    label: Title
+  issue-number:
+    label: Issue Number
     type:  text
-  text:
-    label: Text
-    type:  textarea
+  issue-date:
+    label: Issue Date
+    type:  text
+  editor-title:
+    label: Editor title
+    type: text
+  editor-text:
+    label: Editor Text
+    type: textarea
