@@ -10,7 +10,7 @@ Editor-title: New
 
 ----
 
-Editor-text: Lorem ipsum
+Editor-text: 
 
 ----
 

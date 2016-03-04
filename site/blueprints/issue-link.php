@@ -28,6 +28,6 @@ fields:
   source:
     label: Source
     type: text
-  source-url:
+  source_url:
     label: Source URL
     type: url
