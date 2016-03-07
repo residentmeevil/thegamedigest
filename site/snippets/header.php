@@ -15,8 +15,14 @@
 <body>
 
   <header class="header cf" role="banner">
-    <a class="logo" href="<?php echo url() ?>">
-      <img src="<?php echo url('assets/images/logo.svg') ?>" alt="<?php echo $site->title()->html() ?>" />
-    </a>
-    <?php snippet('menu') ?>
+
+      <div class="col-sm-5">
+        <a class="logo" href="<?php echo url() ?>">
+          <img src="<?php echo url('assets/dist/img/logo.png') ?>" alt="<?php echo $site->title()->html() ?>" class="responsive-image" />
+        </a>
+      </div>
+
+      <div class="col-sm-6">
+        <?php snippet('menu') ?>
+      </div>
   </header>

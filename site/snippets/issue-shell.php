@@ -1,19 +1,19 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
+      <?php $item = $page->children()->first() ?>
 
-      <ul>
-        <li>
-           <?php $item = $page->grandChildren()->first() ?>
-           <h1>First item</h1>
-        </li>
+      <?php if($image = $item->images()->sortBy('sort', 'asc')->first()): ?>
+          <section class="issue" style="background-image: url(<?php echo $image->url() ?>);">
+                  <div class="issue__container">
+                    <div class="col-sm-8 col-sm-offset-4">
+                      <h1 class="issue__title"><?php echo $item->title() ?></h1>
+                    </div>
+                  </div>
+          </section>
 
-        <?php foreach($page->grandChildren()->offset(1) as $item): ?>
-          <li>
-            <h1>Every other item</h1>
-          </li>
-        <?php endforeach ?>
-      </ul>
+      <?php endif ?>
+
+      <?php foreach($page->grandChildren()->offset(1) as $item): ?>
+
+      <?php endforeach ?>
 
 
     </div>

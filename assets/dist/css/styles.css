@@ -3738,8 +3738,34 @@ a:focus {
 /* =========================================================================== */
 /* Layout */
 /* =========================================================================== */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  z-index: 10;
+}
+
 /* Components */
 /* =========================================================================== */
+.issue {
+  height: 100vh;
+  position: relative;
+}
+.issue__container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+}
+.issue__title {
+  font-size: 40px;
+  font-size: 4rem;
+  color: #ffffff;
+  text-shadow: 2px 2px black;
+}
+
 /* Pages */
 /* =========================================================================== */
 /* Vendor */

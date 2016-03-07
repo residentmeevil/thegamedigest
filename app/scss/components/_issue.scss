@@ -1,0 +1,17 @@
+.issue{
+  height: 100vh;
+  position: relative;
+
+  &__container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+  }
+
+  &__title{
+    @include font-size(40);
+    color: $white;
+    text-shadow: 2px 2px black;
+  }
+}
