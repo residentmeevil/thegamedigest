@@ -2,7 +2,7 @@ Issue-number: 1
 
 ----
 
-Issue-date: Friday 4th March 2016
+Issue-date: Friday 11th March 2016
 
 ----
 
@@ -15,3 +15,11 @@ Editor-text:
 ----
 
 Title: Issue 1
+
+----
+
+Issue-color: #fed034
+
+----
+
+Date-color: #ffffff

@@ -1,0 +1,35 @@
+.article{
+  margin-top: 60px;
+
+  &__image{
+    border-left: 20px solid;
+    border-bottom: 20px solid;
+  }
+
+  &__title{
+    @include font-size(22);
+    margin: 0;
+    color: $dark-grey;
+    line-height: 1.6;
+  }
+
+  &__text{
+    color: $text;
+    line-height: 1.6;
+  }
+
+  &__author{
+    float: left;
+    width: 50%;
+  }
+
+  &__source{
+    float: right;
+    width: 50%;
+    text-align: right;
+  }
+
+  &__meta{
+    color: $meta; 
+  }
+}

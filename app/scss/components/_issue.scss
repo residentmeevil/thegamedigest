@@ -1,6 +1,9 @@
 .issue{
   height: 100vh;
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 
   &__container{
     position: absolute;
@@ -10,8 +13,16 @@
   }
 
   &__title{
-    @include font-size(40);
+    @include font-size(160);
     color: $white;
-    text-shadow: 2px 2px black;
+    margin: 0;
+    line-height: 120px;
+  }
+
+  &__date{
+    @include font-size(22);
+    margin: 15px;
+    color: #333;
+    font-weight: normal;
   }
 }

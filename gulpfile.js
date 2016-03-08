@@ -53,8 +53,8 @@ gulp.task('scripts', function() { 
 });
 
 gulp.task('images', function() {
-    return gulp.src('app/assets/img/**/*')
-        .pipe(gulp.dest('dist/assets/img'))
+    return gulp.src('app/img/**/*')
+        .pipe(gulp.dest('assets/dist/img'))
         .pipe(browserSync.stream());
 });
 

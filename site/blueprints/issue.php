@@ -7,7 +7,13 @@ fields:
   issue-number:
     label: Issue Number
     type:  text
-  issue-date:
+  issue_color:
+    label: Issue Colour
+    type: text
+  date_color:
+    label: Date Colour
+    type: text
+  issue_date:
     label: Issue Date
     type:  text
   editor-title:

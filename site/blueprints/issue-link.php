@@ -13,18 +13,15 @@ fields:
   author:
     label: Author
     type: text
-  author-link:
-    label: Author link
-    type: url
   type:
     label: Type
     type: select
     options:
-      feature: Feature
-      news: News
-      review: Review
-      video: Video
-      podcast: Podcast
+      Feature: Feature
+      News: News
+      Review: Review
+      Video: Video
+      Podcast: Podcast
   source:
     label: Source
     type: text
