@@ -1,0 +1,22 @@
+.editors-container{
+  border-left: 20px solid;
+  padding-left: 30px;
+  margin-bottom: 60px;
+
+  @media (min-width: $three-seven-five){
+    margin-bottom: 120px;
+  }
+
+  h2{
+    margin: 0;
+  }
+
+  p{
+    color: $text;
+    line-height: 1.6;
+
+    @media (max-width: $three-seven-five){
+      @include font-size(14);
+    }
+  }
+}

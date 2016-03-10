@@ -1,0 +1,21 @@
+Title: Why Jonathan Blow's Puzzles Aren't Just Puzzles
+
+----
+
+Description: For Jonathan Blow, a puzzle is never just a puzzle - it's a communication from the designer to the player about the game's universe. In this episode, I share the philosophy and design process of the brains behind Braid and The Witness.
+
+----
+
+Author: Game Maker's Toolkit
+
+----
+
+Type: microphone
+
+----
+
+Source: YouTube
+
+----
+
+Source-url: https://www.youtube.com/watch?v=2zK8ItePe3Y

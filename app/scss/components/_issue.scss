@@ -13,16 +13,32 @@
   }
 
   &__title{
-    @include font-size(160);
+    @include font-size(38);
+    line-height: 0px;
+
+    @media (min-width: $three-hundred){
+      @include font-size(62);
+      line-height: 25px;
+    }
+
+    @media (min-width: $four-thirty){
+      @include font-size(100);
+      line-height: 60px;
+    }
+
+    @media (min-width: $one-thousand-one-hundred){
+      @include font-size(160);
+      line-height: 120px;
+    }
+
     color: $white;
     margin: 0;
-    line-height: 120px;
   }
 
   &__date{
     @include font-size(22);
-    margin: 15px;
-    color: #333;
+    margin: 15px 0;
+    color: #333333;
     font-weight: normal;
   }
 }

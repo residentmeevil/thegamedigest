@@ -12,7 +12,7 @@
 
       <?php endif ?>
 
-        <section>
+        <section class="article-container">
             <div class="container">
 
       <?php foreach($page->grandChildren() as $item): ?>
@@ -20,10 +20,12 @@
             <div class="row article">
               <a href="<?php echo $item->source_url() ?>">
                 <div class="col-sm-5">
+                  <div class="relative">
                   <?php if($image = $item->images()->sortBy('sort', 'asc')->first()): ?>
                     <img src="<?php echo $image->url() ?>" alt="" class="responsive-image article__image" />
-                    <span class="article__type"><?php echo $item->type() ?></span>
                   <?php endif ?>
+                    <span class="article__type"><i class="fa fa-<?php echo $item->type() ?>"></i></span>
+                  </div>
                 </div>
 
                 <div class="col-sm-7">
@@ -41,6 +43,22 @@
 
       <?php endforeach ?>
 
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row ">
+          <div class="col-xs-12">
+            <div class="editors-container">
+              <?php $item = $page->children()->first() ?>
+
+              <h2><?php echo $item->editor_title() ?></h2>
+
+              <?php echo $item->editor_text()->kirbytext() ?>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

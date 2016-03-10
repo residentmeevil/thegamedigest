@@ -5,3 +5,23 @@
   width: 100%;
   z-index: 10;
 }
+
+.logo--mobile{
+  display: block;
+  max-width: 400px;
+}
+
+.logo--desktop{
+  display: none;
+}
+
+@media (min-width: $small-screen){
+
+  .logo--mobile{
+    display: none;
+  }
+
+  .logo--desktop{
+    display: block;
+  }
+}

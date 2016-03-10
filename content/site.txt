@@ -1,17 +1,25 @@
-Title: Kirby Starterkit
+Title: The Game Digest
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Liam Richardson
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: A weekly, curated list of video game culture.
 
 ----
 
-Keywords: Kirby, CMS, file-based
+Keywords: weekly,curated,list,game,video games,culture,ps4,xbox one,pc,nintendo nx,nintendo wii u
 
 ----
 
-Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)
+Copyright: © 2009-(date: Year)
+
+----
+
+Footer-text: 
+
+The Game Digest is an experimental site showcasing hand picked gaming content from the past week, created by (link: https://twitter.com/Meevil text: Liam Richardson). Interested in having your work featured? Just want to provide us with a little feedback? Want to help out? Email (link: liam@gamernation.co.uk text: liam@gamernation.co.uk).
+
+None of the content on this site is sponsored and / or promoted by a third party. Everything featured on this site is hand picked based purely on content alone. People may send us things from time to time, but we still only pick what we believe to be the best of the best. I'd be surprised if anyone's read this far down. I sleep naked, because I like the freedom it offers me.

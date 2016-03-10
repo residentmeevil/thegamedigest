@@ -17,11 +17,9 @@ fields:
     label: Type
     type: select
     options:
-      Feature: Feature
-      News: News
-      Review: Review
-      Video: Video
-      Podcast: Podcast
+      pencil : Written
+      video-camera : Video
+      microphone : Podcast
   source:
     label: Source
     type: text

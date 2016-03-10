@@ -16,9 +16,9 @@ fields:
   issue_date:
     label: Issue Date
     type:  text
-  editor-title:
+  editor_title:
     label: Editor title
     type: text
-  editor-text:
+  editor_text:
     label: Editor Text
     type: textarea

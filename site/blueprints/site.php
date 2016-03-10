@@ -18,3 +18,6 @@ fields:
   copyright:
     label: Copyright
     type:  textarea
+  footer_text:
+    label: Footer Text
+    type: textarea

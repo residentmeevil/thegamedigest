@@ -1,0 +1,25 @@
+.footer{
+  background: $dark-grey;
+  color: $meta;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 1.6;
+
+  @media (min-width: $three-seven-five){
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  a, a:focus, a:visited{
+    color: $white;
+    text-decoration: none;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: $three-seven-five){
+    @include font-size(14);
+  }
+}
