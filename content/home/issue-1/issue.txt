@@ -10,7 +10,11 @@ Editor-title: Editor's Note
 
 ----
 
-Editor-text: Lionhead, the UK based studio famous for such hits as Fable, The Movies and Black & White, is no more. Following a surprise announcement from its parent company Microsoft earlier this week, the company and it's in development multiplayer game *Fable Legends* are, sadly, no more.
+Editor-text: 
+
+Lionhead, a studio synonymous with the British games industry, sadly shut it's doors this week. Or rather, had them forcibly shut by parent company Microsoft, who also cancelled their in development Xbox One exclusive Fable: Legends.
+
+It was news that shook the entire industry, with many taking to social media
 
 ----
 

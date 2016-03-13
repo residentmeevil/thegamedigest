@@ -73,7 +73,7 @@ gulp.task('fonts', function() {
   gulp.task('browser-sync', ['styles'], function() {
     // Static server
     browserSync.init({
-         proxy: "http://gamedigest.dev:9000/"
+         proxy: "http://localhost/thegamedigest/"
     });
 
     gulp.watch('app/scss/**/*.scss', ['styles']);
